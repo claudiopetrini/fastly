@@ -73,16 +73,26 @@ The fastly module also includes a few limited "helper" methods that make working
         <td><a href="https://docs.fastly.com/api/config#domain_4">Link</a></td>
     </tr>
     <tr>
+        <td>deleteDomain</td>
+        <td><pre lang="javascript"><code>fastly.deleteDomain('myServiceId', 'version', 'domain', callback);</code></pre></td>
+        <td><a href="https://docs.fastly.com/api/config#domain_6">Link</a></td>
+    </tr>
+
+    <tr>
         <td>getDictionary</td>
         <td><pre lang="javascript"><code>fastly.getDictionary('myServiceId', 'version', 'dictionaryName', callback);</code></pre></td>
         <td><a href="https://docs.fastly.com/api/config#dictionary_2">Link</a></td>
     </tr>
     <tr>
         <td>createDictionaryItem</td>
-        <td><pre lang="javascript"><code>fastly.createDictionaryItem('myServiceId', 'version', 'dictionary', callback);</code></pre></td>
+        <td><pre lang="javascript"><code>fastly.createDictionaryItem('myServiceId', 'dictionary', 'key', 'value', callback);</code></pre></td>
         <td><a href="https://docs.fastly.com/api/config#dictionary_item_3">Link</a></td>
     </tr>
-
+    <tr>
+        <td>deleteDictionaryItem</td>
+        <td><pre lang="javascript"><code>fastly.deleteDictionaryItem('myServiceId', 'dictionary', 'key', callback);</code></pre></td>
+        <td><a href="https://docs.fastly.com/api/config#dictionary_item_5">Link</a></td>
+    </tr>
 
 
 </table>
